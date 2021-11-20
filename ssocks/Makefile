@@ -11,7 +11,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/tostercx/ssocks.git
-PKG_MIRROR_HASH:=skip
+PKG_MIRROR_HASH:=0ce65cb7aaea78c97bba9d62af3b40ed0d422938f67cb44a24d522608cfd097c
 PKG_SOURCE_VERSION:=null
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 
