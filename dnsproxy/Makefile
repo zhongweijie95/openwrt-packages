@@ -10,7 +10,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/AdguardTeam/dnsproxy/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=14c8d8a06d0b6777efaa184cf248d688c5a8bc3280ccc1c97316915712bf1a5a
+PKG_HASH:=skip
 
 PKG_MAINTAINER:=Tianling Shen <cnsztl@immortalwrt.org>
 PKG_LICENSE:=Apache-2.0

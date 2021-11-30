@@ -12,9 +12,9 @@ PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Ansuel Smith <ansuelsmth@gmail.com>
 
 LUCI_TITLE:=LuCI Support for Dynamic DNS Client (ddns-scripts)
-LUCI_DEPENDS:=+luci-lib-ipkg +luci-mod-admin-full +ddns-scripts
+LUCI_DEPENDS:=+luci-lib-ipkg +luci-mod-admin-full +ddns-scripts +ddns-scripts-aliyun +ddns-scripts-dnspod +ddns-scripts-cloudflare
 LUCI_PKGARCH:=all
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
