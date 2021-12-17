@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ariang
-PKG_VERSION:=1.2.2
+PKG_VERSION:=1.2.3
 PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).zip
@@ -53,9 +53,8 @@ define Package/ariang/install
 	$(CP) \
 		$(PKG_BUILD_DIR)/{langs,css,js,fonts} \
 		$(PKG_BUILD_DIR)/index.html \
-		$(PKG_BUILD_DIR)/index.manifest \
 		$(PKG_BUILD_DIR)/LICENSE \
-		$(PKG_BUILD_DIR)/{favicon.*,*.png} \
+		$(PKG_BUILD_DIR)/favicon.* \
 		$(PKG_BUILD_DIR)/robots.txt \
 		$(1)/www/ariang
 endef
