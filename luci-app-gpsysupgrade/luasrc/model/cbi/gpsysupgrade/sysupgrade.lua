@@ -127,7 +127,9 @@ if not retain or retain == "" then
 	local result = api.exec("/sbin/sysupgrade", {file}, nil, api.command_timeout) == 0
 else
 	if retain:match(".*-q .*") then
-		luci.sys.exec("echo -e /etc/backup/user_installed.opkg>/lib/upgrade/keep.d/luci-app-gpsysupgrade")
+		luci.sys.exec(". /etc/profile.d/opkg.sh;opkg save")
+	else
+		luci.sys.exec("uci -q del opkg.auto;uci commit opkg")
 	end
 	sys.exec("/sbin/sysupgrade " ..retain.. " " ..file.. "")
 end
