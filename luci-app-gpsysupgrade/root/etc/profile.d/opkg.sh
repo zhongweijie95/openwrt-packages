@@ -135,8 +135,8 @@ opkg_export_cmd() {
 local OPKG_TYPE
 local OPKG_IG="$(opkg export ig)"
 case "${OPKG_OPT:1}" in
-(i) OPKG_TYPE="installed";opkg list-"${OPKG_TYPE}" | sed -e "s/\s.*$//" | grep -v -f "${OPKG_IG}" ;;
-(u) OPKG_TYPE="upgradable";opkg list-"${OPKG_TYPE}" | sed -e "s/\s.*$//" ;;
+(i) OPKG_TYPE="installed";opkg list-"${OPKG_TYPE}" | sed -e "s/\s.*$//" ;;
+(u) OPKG_TYPE="upgradable";opkg list-"${OPKG_TYPE}" | sed -e "s/\s.*$//" | grep -v -f "${OPKG_IG}" ;;
 esac
 }
 
