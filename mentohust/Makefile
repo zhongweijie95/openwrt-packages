@@ -14,7 +14,7 @@ PKG_RELEASE:=
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git
 PKG_SOURCE_VERSION:=null
-PKG_MIRROR_HASH:=skip
+PKG_MIRROR_HASH:=1db6cd4402ea3e1fa2adc3adcc1490fffdac224ae83024d883429b8b67fb9c74
 
 MAKE_PATH:=src
 

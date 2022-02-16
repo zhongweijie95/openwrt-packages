@@ -10,7 +10,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://codeload.github.com/HyNetwork/hysteria/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=skip
+PKG_HASH:=f543cfef69fc396c15248262d084aa3f6fef48a8cd98bdd8fda113fd4f5bf94c
 
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILE:=LICENSE

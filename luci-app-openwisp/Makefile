@@ -10,6 +10,6 @@ LUCI_TITLE:=LuCI support for OpenWISP
 LUCI_DESCRIPTION:=Allows configuration of OpenWISP agent settings
 LUCI_DEPENDS:=+openwisp-config
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
