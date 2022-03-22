@@ -5,7 +5,7 @@ PKG_RELEASE:=
 
 PKG_SOURCE_URL:=https://github.com/obsy/sms_tool
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2022-02-26
+PKG_SOURCE_DATE:=2022-03-21
 PKG_SOURCE_VERSION:=null
 
 include $(INCLUDE_DIR)/package.mk
